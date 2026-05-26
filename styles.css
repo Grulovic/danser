@@ -1323,6 +1323,26 @@ textarea {
     grid-template-columns: 1fr;
   }
 
+  .contact-bridge-visual {
+    grid-template-columns: 56px minmax(0, 1fr) 56px;
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .contact-bridge-strip {
+    overflow: hidden;
+  }
+
+  .contact-bridge-image {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .flag-round-img.lg {
+    width: 56px;
+    height: 56px;
+  }
+
   .hero-panel,
   .hero-image-full {
     min-height: max(620px, calc(100svh - 92px));
