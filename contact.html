@@ -10,17 +10,45 @@
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="index.html">Danser</a>
-    <nav class="main-nav" aria-label="Primary navigation">
+    <nav class="main-nav desktop-nav" aria-label="Primary navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a class="active" href="contact.html">Contact</a>
     </nav>
-    <div class="lang-switch">
+    <div class="lang-switch desktop-lang">
       <button class="lang-trigger" type="button" aria-haspopup="true">Srpski</button>
       <div class="lang-menu" role="menu" aria-label="Language">
         <a class="active" href="contact.html">Srpski</a>
+        <a href="contact.html">Dansk</a>
       </div>
     </div>
+
+    <input class="mobile-nav-toggle" id="mobile-nav-toggle" type="checkbox" aria-label="Open mobile menu">
+    <label class="mobile-nav-button" for="mobile-nav-toggle" aria-label="Toggle mobile menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <label class="mobile-nav-backdrop" for="mobile-nav-toggle" aria-hidden="true"></label>
+
+    <aside class="mobile-nav-panel" aria-label="Mobile navigation">
+      <div class="mobile-nav-head">
+        <span>Meni</span>
+        <label class="mobile-nav-close" for="mobile-nav-toggle" aria-label="Close menu">×</label>
+      </div>
+      <nav class="mobile-nav-links" aria-label="Mobile primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+      <details class="mobile-lang-switch">
+        <summary>Srpski</summary>
+        <div class="mobile-lang-menu">
+          <a class="active" href="contact.html">Srpski</a>
+          <a href="contact.html">Dansk</a>
+        </div>
+      </details>
+    </aside>
   </div>
 </header>
 
