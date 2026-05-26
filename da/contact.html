@@ -3,113 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Danser | Contact</title>
+  <title>Danser | Kontakt</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="index.html">Danser</a>
-    <nav class="main-nav" aria-label="Primary navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a class="active" href="contact.html">Contact</a>
+    <nav class="main-nav desktop-nav" aria-label="Primary navigation">
+      <a href="index.html">Hjem</a>
+      <a href="about.html">Om os</a>
+      <a class="active" href="contact.html">Kontakt</a>
     </nav>
-    <div class="lang-switch">
+    <div class="lang-switch desktop-lang">
       <button class="lang-trigger" type="button" aria-haspopup="true">Dansk</button>
       <div class="lang-menu" role="menu" aria-label="Language">
         <a href="../contact.html">Srpski</a>
         <a class="active" href="contact.html">Dansk</a>
       </div>
     </div>
+
+    <input class="mobile-nav-toggle" id="mobile-nav-toggle" type="checkbox" aria-label="Open mobile menu">
+    <label class="mobile-nav-button" for="mobile-nav-toggle" aria-label="Toggle mobile menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <label class="mobile-nav-backdrop" for="mobile-nav-toggle" aria-hidden="true"></label>
+
+    <aside class="mobile-nav-panel" aria-label="Mobile navigation">
+      <div class="mobile-nav-head">
+        <span>Menu</span>
+        <label class="mobile-nav-close" for="mobile-nav-toggle" aria-label="Close menu">×</label>
+      </div>
+      <nav class="mobile-nav-links" aria-label="Mobile primary navigation">
+        <a href="index.html">Hjem</a>
+        <a href="about.html">Om os</a>
+        <a class="active" href="contact.html">Kontakt</a>
+      </nav>
+      <details class="mobile-lang-switch">
+        <summary>Dansk</summary>
+        <div class="mobile-lang-menu">
+          <a href="../contact.html">Srpski</a>
+          <a class="active" href="contact.html">Dansk</a>
+        </div>
+      </details>
+    </aside>
   </div>
 </header>
 
 <main>
   <section class="section-space">
     <div class="container">
-      <span class="kicker">Contact</span>
+      <span class="kicker">Kontakt</span>
       <h1>Kontakt</h1>
-      <p class="lead">Hvis du har brug for hjælp i forbindelse med planlagte aktiviteter mellem Kongeriget Danmark og Republikken Serbien, så send en besked eller kontakt os direkte.</p>
+      <p class="lead">Hvis du har brug for hjælp i forbindelse med planlagte aktiviteter mellem Kongeriget Danmark og Republikken Serbien, kan du sende en besked eller kontakte os direkte.</p>
 
-      <div class="country-bridge-banner" style="margin-top:1rem;">
-        <article class="banner-country">
-          <span class="flag-disc dk"></span>
-          <div>
-            <h3>Kongeriget Danmark</h3>
-            <p>Direkte kommunikation og pålidelige kontaktpunkter.</p>
-          </div>
-        </article>
-        <div class="banner-center">
-          <span class="bridge-line" style="display:block; margin:0 auto; width:220px;"></span>
-          <p>Hvordan kan vi hjælpe?</p>
-          <div class="dual-accent"></div>
-        </div>
-        <article class="banner-country" style="justify-content:flex-end;">
-          <div style="text-align:right;">
-            <h3>Republikken Serbien</h3>
-            <p>Juridisk og forretningsmæssig støtte i gennemførelse.</p>
-          </div>
-          <span class="flag-disc rs"></span>
-        </article>
-      </div>
-
-      <div class="contact-bridge-card" style="margin-top:1rem;">
-        <div class="hero-flag-row">
-          <span class="flag-disc dk" style="width:64px;"></span>
-          <span class="bridge-line"></span>
-          <span class="flag-disc rs" style="width:64px;"></span>
+      <div class="contact-bridge-strip" style="margin-top:1rem;">
+        <div class="contact-bridge-visual">
+          <img class="flag-round-img lg" src="../assets/dan.png" alt="Kongeriget Danmarks flag">
+          <img class="contact-bridge-image" src="../assets/bridge.png" alt="Samarbejdsbro">
+          <img class="flag-round-img lg" src="../assets/ser.png" alt="Republikken Serbiens flag">
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section-space">
+  <section class="section-space" style="margin-bottom: 50px;">
     <div class="container contact-layout">
       <article class="contact-box">
-        <span class="flag-strip" aria-hidden="true"></span>
         <h2>Kontaktoplysninger</h2>
+        <div class="meta-list">
+          <div class="meta-item">
+            <svg class="meta-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4l2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            <div class="meta-content">
+              <strong>Telefon</strong>
+              <span>+381 11 123 45 67</span>
+            </div>
+          </div>
+          <div class="meta-item">
+            <svg class="meta-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="m4 7 8 6 8-6"/></svg>
+            <div class="meta-content">
+              <strong>Email</strong>
+              <span>office@danser-bridge.com</span>
+            </div>
+          </div>
+          <div class="meta-item">
+            <svg class="meta-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-5.6 7-12a7 7 0 1 0-14 0c0 6.4 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <div class="meta-content">
+              <strong>Adresse</strong>
+              <span>Bulevar Kralja Aleksandra 00, 11000 Beograd, Republikken Serbien</span>
+            </div>
+          </div>
+          <div class="meta-item">
+            <svg class="meta-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/></svg>
+            <div class="meta-content">
+              <strong>Åbningstid</strong>
+              <span>Mandag - Fredag, 09:00 - 17:00</span>
+            </div>
+          </div>
+        </div>
 
-        <div class="meta-item">
-          <svg class="meta-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4l2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
-          <div><strong>Telefon</strong><span>+381 11 123 45 67</span></div>
-        </div>
-        <div class="meta-item">
-          <svg class="meta-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="m4 7 8 6 8-6"/></svg>
-          <div><strong>E-mail</strong><span>office@danser-bridge.com</span></div>
-        </div>
-        <div class="meta-item">
-          <svg class="meta-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-5.6 7-12a7 7 0 1 0-14 0c0 6.4 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          <div><strong>Adresse</strong><span>Bulevar Kralja Aleksandra 00, 11000 Beograd, Republika Srbija</span></div>
-        </div>
-        <div class="meta-item">
-          <svg class="meta-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/></svg>
-          <div><strong>Åbningstid</strong><span>Mandag - Fredag, 09:00 - 17:00</span></div>
-        </div>
-
-        <h3 style="margin-top:1rem;">Hvordan kan vi hjælpe?</h3>
-        <ul class="checklist">
-          <li>Vi leverer juridiske og forretningsmæssige oplysninger</li>
-          <li>Vi hjælper med etablering af samarbejde og kontakter</li>
-          <li>Bilateral samarbejdsstøtte, aftaler og gennemførelse</li>
-          <li>Fokus på tillid, professionalisme og resultater</li>
-        </ul>
       </article>
 
       <article class="contact-form">
         <h2>Send forespørgsel</h2>
         <form action="#" method="post" class="form-grid">
           <div>
-            <label for="name">Navn</label>
-            <input id="name" name="name" type="text" placeholder="Dit navn">
+            <label for="name">Navn og efternavn</label>
+            <input id="name" name="name" type="text" placeholder="Dit navn og efternavn">
           </div>
           <div>
-            <label for="email">E-mail</label>
+            <label for="email">Email</label>
             <input id="email" name="email" type="email" placeholder="name@example.com">
           </div>
           <div>
             <label for="message">Besked</label>
-            <textarea id="message" name="message" placeholder="Beskriv kort din henvendelse"></textarea>
+            <textarea id="message" name="message" placeholder="Beskriv kort emnet for forespørgslen"></textarea>
           </div>
           <button class="button primary" type="submit">Send</button>
         </form>
@@ -117,12 +127,29 @@
       </article>
     </div>
   </section>
+
+  <section class="section-space">
+    <div class="container">
+      <div class="contact-footer-illustration">
+        <img src="../assets/contact_footer.png" alt="Panorama med bro og bymotiver">
+        <div class="contact-footer-overlay">
+          <h2>Hvordan kan vi hjælpe?</h2>
+          <ul class="checklist checklist-check">
+            <li>Vi tilbyder juridisk og forretningsmæssig information</li>
+            <li>Vi hjælper med etablering af samarbejde og kontakter</li>
+            <li>Bilateralt samarbejde, aftaler og støtte ved gennemførelse</li>
+            <li>Fokus på tillid, professionalisme og resultater</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
   <div class="container footer-inner">
     <span>Danser | Kongeriget Danmark × Republikken Serbien</span>
-    <span>Informativ præsentation af samarbejde</span>
+    <span>Informationspræsentation af samarbejde</span>
   </div>
 </footer>
 </body>
